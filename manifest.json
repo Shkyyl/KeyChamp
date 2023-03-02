@@ -1,0 +1,25 @@
+{
+    "name": "KeyChamp",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "This extension automatically joins the free case battle",
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "tabs"
+    ],
+    "host_permissions": [
+        "*://key-drop.com/*"
+    ],
+    "action": {
+        "default_title": "Join Keydrop battle",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "img/16.png",
+        "48": "img/48.png",
+        "128": "img/128.png"
+    }
+    
+
+}
