@@ -1,7 +1,6 @@
 # KeyChamp
  Extension for joining free case battle on key-drop automatically.
  KeyChamp is a extension which automatically joins the free case battle for you.The extension help you reach a case battle faster, no more wasting your time trying to join free case battle and getting mad.
-[Leave a ⭐ for more updates](https://github.com/Shkyyl/KeyChamp/stargazers)
 ## How to install extension
 - Download [extension.zip](https://github.com/Shkyyl/KeyChamp/releases/)
 - Extract 
@@ -19,3 +18,10 @@
 `` ⚠️ Use uppercase for cases names``
 ## TODO
 - everything
+
+## Support/Contact
+[Leave a ⭐ for more updates](https://github.com/Shkyyl/KeyChamp/stargazers)
+If you want to support me use my code 'tutek' on [Keydrop](https://key-drop.com/?code=tutek) or in DM ⬇️⬇️⬇️
+Feel free to contact me, this are my socials:
+[Twitter](https://twitter.com/ShkyylDev)
+[Reddit](https://www.reddit.com/user/Unique-Evening-3255)
