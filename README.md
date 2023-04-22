@@ -1,6 +1,7 @@
 # KeyChamp
  Extension for joining free case battle on key-drop automatically.
- KeyChamp is a extension which automatically joins the free case battle for you.The extension help you reach a case battle faster, no more wasting your time trying to join free case battle and getting mad.
+ KeyChamp is a extension which automatically joins the free case battle for you.The extension help you reach a case battle faster, no more wasting your time trying to join free case battle and getting mad. 
+ Use my code 'tutek' on [Keydrop](https://key-drop.com/?code=tutek)
 ## How to install extension
 - Download [extension.zip](https://github.com/Shkyyl/KeyChamp/releases/)
 - Extract 
@@ -12,16 +13,20 @@
 - Click on extension
 - Click Join Case Battle and wait
 ## How to change cases you want to join
-1. Go to extension folder
-2. Open popup.js with code or text editor
-3. On line 3 there is ``const TARGETS = [...];`` if you want to add some case just add comma and then write your wanted case in single quotation marks like this ``'MILSPEC'``
-`` ⚠️ Use uppercase for cases names``
+1. Click on extension
+2. Click settings icon
+3. Select cases you want
+## How to increase efficiency of extension
+1. Open extension folder
+2. Open popup.js with text or code editor
+3. Change the number of cases script catch in the line 10 and 11 after splice function 
+``... splice(0, here --> 3))`` by default it's 3
 ## TODO
-- everything
+- full automatic
 
 ## Support/Contact
 [Leave a ⭐ for more updates](https://github.com/Shkyyl/KeyChamp/stargazers)
-If you want to support me use my code 'tutek' on [Keydrop](https://key-drop.com/?code=tutek) or in DM ⬇️⬇️⬇️
+If you want to support me text me in DM ⬇️⬇️⬇️
 Feel free to contact me, this are my socials:
 [Twitter](https://twitter.com/ShkyylDev)
 [Reddit](https://www.reddit.com/user/Unique-Evening-3255)

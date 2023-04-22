@@ -1,12 +1,14 @@
 {
     "name": "KeyChamp",
-    "version": "1.1",
+    "version": "1.2",
     "manifest_version": 3,
+    "author": "Shkyyl",
     "description": "This extension automatically joins the free case battle",
     "permissions": [
         "scripting",
         "activeTab",
-        "tabs"
+        "tabs",
+        "storage"
     ],
     "host_permissions": [
         "*://key-drop.com/*"
@@ -19,6 +21,11 @@
         "16": "img/16.png",
         "48": "img/48.png",
         "128": "img/128.png"
+    },
+    "options_ui":
+    {
+        "open_in_tab": true,
+        "page": "options.html"
     }
     
 

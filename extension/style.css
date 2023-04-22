@@ -8,6 +8,12 @@
 body{
     background-color: #1f1e27;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: #0aff0a;
+    gap: 10px;
+    width: 175px;
+
 }
 .btn {
     align-items: center;
@@ -57,3 +63,45 @@ body{
       min-width: 196px;
     }
   }
+  .btn-options{
+    width: 32px;
+    height: 32px;
+    background-color: #1f1e27;
+    border: none;
+    
+  }
+  .btn-options:hover{
+    background-color: grey;
+  }
+  .holder{
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  svg{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+
+  .main{
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    align-items: center;
+    width: 170px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p{
+    font-size: 12px;
+    color: white;
+  }
+  .madeby{
+    width: 170px;
+    padding-left: 40px;
+  }
+
+  
