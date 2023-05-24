@@ -1,9 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     const caseList = document.getElementById('case-list');
-
-    chrome.storage.local.get({TARGETS: []}, (data) => {
+    chrome.storage.local.get({TARGETS: [], USERS: []}, (data) => {
+      const users = data.USERS;
       const targets = data.TARGETS;
+      const checkboxElements = document.querySelectorAll('.checkbox-wrapper-18');
       const caseElements = document.querySelectorAll('.setting');
+      checkboxElements.forEach((checkboxElement) => {
+        const user = checkboxElement.querySelector('span').textContent;
+        const checkbox = checkboxElement.querySelector('input[type="checkbox"]');
+        if(users.includes(parseInt(user))){
+          checkbox.checked = true;
+        } else {
+          checkbox.checked = false;
+        }
+      });
       caseElements.forEach((caseElement) => {
         const caseType = caseElement.dataset.case;
         const checkbox = caseElement.querySelector('.case-checkbox');
@@ -16,6 +26,20 @@ document.addEventListener('DOMContentLoaded', function() {
           caseElement.classList.add('s-disabled');
           caseElement.classList.remove('s-active');
         }
+      });
+      checkboxElements.forEach((checkboxElement) => {
+        const user = checkboxElement.querySelector('span').textContent;
+        const checkbox = checkboxElement.querySelector('input[type="checkbox"]');
+        checkbox.addEventListener('change', () => {
+          if(checkbox.checked){
+            users.push(parseInt(user));
+          } else {
+            const index = users.indexOf(parseInt(user));
+            if(index !== -1){
+              users.splice(index, 1);
+            }
+          }
+        });
       });
       caseList.addEventListener('click', function(event) {
         const caseElement = event.target.closest('.setting');
@@ -39,9 +63,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
             
           }
-          chrome.storage.local.set({TARGETS: targets});
+          chrome.storage.local.set({TARGETS: targets, USERS: users});
         }
-        chrome.storage.local.get(["TARGETS"], (data) => {
+        chrome.storage.local.get(["TARGETS", "USERS"], (data) => {
           console.log(data);
         })
       });
