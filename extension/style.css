@@ -64,6 +64,9 @@ body{
   background-color: #ffcc00;
   box-shadow: 5px 5px 12px #ffcc004d;
 }
+.btn span::after{
+  content: attr(data-after);
+}
 .bar{
   display: flex;
   flex-direction: row;
